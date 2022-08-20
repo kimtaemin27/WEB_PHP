@@ -1,0 +1,15 @@
+<?php
+    $age = 30;
+    $pay = 2500;
+
+    if($age >= 65){
+        $pay = 0;
+    }
+
+    echo "나이 : ".$age."세<br>";
+    echo "요금 : ".$pay."원<br>";
+
+    $age = 67;
+    echo "나이 : ".$age."세<br>";
+    echo "요금 : ".$pay."원";
+?>

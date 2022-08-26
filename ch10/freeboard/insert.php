@@ -17,7 +17,7 @@
 
   $sql = "insert into freeboard (
           name,
-          passm
+          pass,
           subject,
           content,
           regist_day)";

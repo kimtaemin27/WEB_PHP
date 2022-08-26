@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHP CRUD</title>
   <link rel = "stylesheet" href="style.css">
   <script>
@@ -45,7 +43,7 @@
 <body>
   <h2>자유 게시판 > 글쓰기</h2>
   <form name="board" method="post" action="insert.php">
-    <ul>
+    <ul class="board_form">
       <li>
         <span class="col1">이름 :</span>
         <span class="col2"><input name="name" type="text"></span>
@@ -65,7 +63,7 @@
         </span>
       </li>
     </ul>
-    <ul>
+    <ul class="buttons">
       <li>
         <button type="button" onclick="check_input()">저장하기</button>
       </li>

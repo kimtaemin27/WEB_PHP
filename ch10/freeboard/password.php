@@ -6,7 +6,7 @@
   // 비밀번호
   $mode = $POST["pass"];
 
-  $con = mysqli_conect("localhost", "user", "12345", "sample");
+  $con = mysqli_connect("localhost", "user", "12345", "sample");
   // 레코드 검색
   $sql = "select *
           from freeboard where num = $num";

@@ -6,14 +6,20 @@
     $num = "";
   }
 
+  // 127.0.0.1
   $con = mysqli_connect("127.0.0.1", "root", "19273628hsh", "sys");
   // 레코드 검색
   $sql = "select * from freeboard where num = $num";
   // sql 명령 실행
   $result = mysqli_query($con, $sql);
 
+  if (!$result) {
+    echo 'MySQL Error: ' . mysqli_error();
+    exit;
+}
+
   // 레코드 가져오기
-  $row = mysqli_fetch_assoc($result);
+  $row = mysqli_fetch_assoc( $result);
   // 이름
   $name = $row["name"];
   // 제목

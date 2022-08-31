@@ -13,7 +13,7 @@
   $sql = "select pass
           from freeboard where num = $num";
   // $sql 에 저장된 명령 실행
-  $result = mysql_query($con, $sql);
+  $result = mysqli_query($con, $sql);
 
   // 레코드 가져오기
   $row = mysqli_fetch_assoc($result);
@@ -26,7 +26,7 @@
   // $db_password : DB 저장 비밀번호
   if($pass == $db_password) {
     if($mode == "modify") {
-      $url = "modify_from.php?num=$num";
+      $url = "modify_form.php?num=$num";
     } else {
       $url = "delete.php?num=$num";
     }

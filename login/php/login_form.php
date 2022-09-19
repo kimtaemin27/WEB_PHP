@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/WEB_PHP/login/css/style.css">
-    <script src="/WEB_PHP/login/js/logincheck.js"></script>
+    <script src="/login/js/logincheck.js"></script>
 </head>
 <body>
     <h2 class="login_title">로그인</h2>
-    <form name="login" method="post" action="login.php">
+    <form name="login" method="POST" action="login.php">
         <ul class="login_form">
             <li>
                 <span class="col1">아이디</span>
                 <span class="col2">
-                    <input type="text" name="id" placeholder="아이디">
+                    <input type="text" name="id" placeholder="dkdlel">
                 </span>
             </li>
             <li>

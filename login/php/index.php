@@ -1,12 +1,5 @@
 <?php
     session_start();
-    
-    if(isset($_SESSION["userid"])) {
-        $userid = $_SESSION["userid"];
-    } else {
-        $userid = "";
-    }
-
     if(isset($_SESSION["username"])) {
         $username = $_SESSION["username"];
     } else {
@@ -21,21 +14,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/WEB_PHP/login/css/style.css">
 </head>
 <body>
     <div class="header">
         <h3 class="logo">
-            <a href="index.php">login</a>
+            <a href="index.php">PHP</a>
         </h3>
-        <div class="top">
+        < class="top">
             <?php
                 if(!$userid) {
             ?>
             <span>
-                <a href="form.php">회원 가입</a>
+                <a href="form.php">회원가입</a>
             </span>
-            <span> | </span>
             <span>
                 <a href="login_form.php">로그인</a>
             </span>
@@ -54,12 +45,12 @@
             </span>
             <span> | </span>
             <span>
-                <a href="modify_form.php">정보수정</a>
+                <a href="modify_form.php"></a>
             </span>
             <?php
                 }
             ?>
-        </div>  <!-- top -->
-    </div>  <!-- header -->
+        </div>
+    </div>
 </body>
 </html>

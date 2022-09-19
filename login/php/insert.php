@@ -11,16 +11,16 @@
     // 가입 일자
     $regist_day = date("Y-m-d (H:i)");
 
-    $con = mysqli_connect("127.0.0.1", "root", "19273628hsh", "sys");
-    $sql = "insert into members (id, name, email, regist_day, level, point)";
-    $sql .= "values('$id', '$name', '$email', '$regist_day', '$level', '$regist_day', 9, 0)";
+    $con = mysqli_connect("localhost", "dbuser", "19273628hsh", "sample");
 
-    // sql 명령 실행
+    $sql = "INSERT INTO members ( id, pass, name, email, regist_day, level, point)";
+    $sql.= "values ('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";
+
     mysqli_query($con, $sql);
     mysqli_close($con);
 
     // 로그인 폼으로 이동
     echo "<script>
-                location.href = 'login_form.php';
-            </script>";
+            location.href = 'login_form.php';
+        </script>";
 ?>
